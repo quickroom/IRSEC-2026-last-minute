@@ -1,0 +1,12 @@
+IRSeC pfSense toolkit validation
+Date: 2026-10-30
+
+PASS - POSIX /bin/sh syntax check for every script
+PASS - static policy scan found no prohibited firewall/account/service/package/network mutation or upload command forms
+PASS - generated evidence manifest verified successfully
+PASS - intentional evidence tampering was detected
+PASS - expanded toolkit scripts passed the same syntax and read-only policy checks
+
+Test command: sh tests/run-tests.sh
+
+Note: Validation ran in the build environment. The scripts target standard commands on pfSense 2.7.2 / FreeBSD; command availability and privileges should be confirmed on the competition image without making changes.
